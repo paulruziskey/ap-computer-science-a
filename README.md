@@ -2,4 +2,4 @@
 
 Welcome to the AP-computer-science-a course! Click on a module above to get started!
 
-Project directories contain a `project.md` file which contains a link to the instructions.
+Project directories each contain a `project.md` file which contains a link to the instructions.
