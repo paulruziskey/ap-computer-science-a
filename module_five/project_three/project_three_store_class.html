@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Store Class</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../assets/stylesheets/style.css" />
+</head>
+<body>
+<div class="button back-button">
+<p><a
+href="https://github.com/paulruziskey/ap-computer-science-a/tree/main/module_five">❮
+Module Five</a></p>
+</div>
+<div class="nav-grid highlighted">
+<div class="nav-grid-item-left button">
+<p><a href="project_two_student_class.html">❮ Project Two</a></p>
+</div>
+<section id="project-three-store-class" class="nav-grid-item-center">
+<h1>Project Three: Store Class</h1>
+</section>
+<div class="nav-grid-item-right button">
+<p><a href="project_four_multiple_choice.html">Project Four ❯</a></p>
+</div>
+</div>
+<div class="main-content">
+<div class="centered">
+<p>In this project, you’ll make a basic console application modeling a
+store. You’ll write a <code>Store</code> class to model the store and a
+<code>Product</code> class to model each product sold. However, instead
+of writing a regular class for <code>Product</code>, you’re going to
+learn how to write a <em>record</em> which will simplify things. You’re
+also going to practice handling bad input.</p>
+<p>Complete the following tasks to complete the project! Example output
+is shown below, including output for cases where bad input is
+encountered.</p>
+<ul>
+<li>Write a <code>Product</code> record with instance variables
+<code>name</code>, <code>unitPrice</code>, and <code>quantity</code>.
+This record should have a method to facilitate creating new records with
+adjusted quantities</li>
+<li>Write a <code>Store</code> class with instance variables
+<code>apple</code>, <code>orange</code>, and <code>pear</code>. Each
+instance variable will be of type <code>Product</code>:
+<ul>
+<li>Write a constructor which accepts the unit prices for each product
+and creates <code>Product</code> instances for each product</li>
+<li>Override the <code>toString</code> method to display the
+products</li>
+<li>Write a <code>receive</code> method which accepts a product name and
+a quantity. This method should increase the quantity for the received
+product. If the product name is invalid, or if the quantity is below
+one, an exception should be thrown</li>
+<li>Write a <code>sell</code> method which accepts a product name and a
+quantity. This method should decrease the quantity for the received
+product if the quantity is less than or equal to the current quantity
+for the given product and return the total cost for the products
+purchased. If the store has insufficient stock, -1 should be returned.
+If the product name is invalid, or if the quantity is below one, an
+exception should be thrown</li>
+</ul></li>
+</ul>
+<div class="captioned-img">
+<p><img
+src="../../assets/images/module_five/project_three/example_good.png"
+class="bordered raised centered-img"
+title="Expected output for good input" alt="Expected good output" />
+Example output for good input</p>
+</div>
+<div class="captioned-img">
+<p><img
+src="../../assets/images/module_five/project_three/example_bad.png"
+class="bordered raised centered-img"
+title="Expected output for bad input" alt="Expected bad output" />
+Example output for bad input</p>
+</div>
+</div>
+</div>
+<div class="nav-grid">
+<div class="nav-grid-item-left">
+<p><a href="project_two_student_class.html">❮ Project Two</a></p>
+</div>
+<div class="nav-grid-item-center flex">
+<div class="flex-row">
+<p><a href="https://github.com/paulruziskey/ap-computer-science-a"><img
+src="../../assets/logos/java.svg" class="logo"
+title="AP Computer Science A Curriculum" alt="Java" /></a></p>
+</div>
+<div class="flex-row">
+<p>© 2025 Paul Ruziskey. All rights reserved.</p>
+</div>
+</div>
+<div class="nav-grid-item-right">
+<p><a href="project_four_multiple_choice.html">Project Four ❯</a></p>
+</div>
+</div>
+<script src="../../assets/scripts/sticky_back_button.js"></script>
+</body>
+</html>
